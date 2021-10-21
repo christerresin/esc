@@ -8,8 +8,6 @@ $imagePlaceholderColor: #dfe6ee;
 $mobileScreenBreakpoint: 800px;
 
 @mixin primaryBtn {
-  /* using a negative value for margin to push the buttons down past image */
-  margin-bottom: -30px;
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
@@ -41,14 +39,14 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 220px;
+  height: 160px;
 
   .logo {
-    border-radius: 4rem;
-    height: 7rem;
-    width: 7rem;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
     margin-left: 2rem;
-    margin-top: 2rem;
+    margin-right: 1rem;
 
     background-color: $primaryColor;
   }
@@ -61,12 +59,14 @@ body {
     color: $primaryFontColor;
 
     span:nth-of-type(1) {
-      font-size: 2.4rem;
+      font-size: 1.7rem;
       font-weight: 400;
     }
 
     span:nth-of-type(2) {
-      font-size: 1.6rem;
+      margin-top: 7px;
+
+      font-size: 1.1rem;
       font-weight: 400;
     }
   }
@@ -79,9 +79,9 @@ body {
     background-image: url(/img/menu.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 80px;
-    width: 80px;
-    margin-right: 4rem;
+    height: 50px;
+    width: 50px;
+    margin-right: 3rem;
   }
 
   @media screen and (min-width: $mobileScreenBreakpoint) {
@@ -95,6 +95,8 @@ body {
       grid-column: 1 / 2;
       height: 5.5rem;
       width: 5.5rem;
+      margin-top: 2rem;
+      margin-right: 25px;
     }
 
     .company-name {
@@ -103,7 +105,6 @@ body {
       align-items: center;
       grid-column: 2 / 13;
       margin-top: 40px;
-      margin-left: 25px;
       width: 100%;
 
       font-size: 2.2rem;
@@ -148,25 +149,20 @@ body {
   grid-column: span 12;
 
   .challenges-hero-img {
-    position: relative;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    grid-column: span 12;
-    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
     background-color: $imagePlaceholderColor;
     background-image: url(img/img-placeholder.jpg);
-    background-size: 30%;
+    background-size: 15rem;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  .online-challenges-btn {
-    @include primaryBtn;
-  }
-
   .onsite-challenges-btn {
     @include primaryBtn;
+    margin-top: 240px;
   }
 
   a {
@@ -174,5 +170,61 @@ body {
     font-weight: 400;
     text-decoration: none;
     color: #fff;
+  }
+
+  .online-challenges-btn {
+    @include primaryBtn;
+    background-color: #fff;
+    color: $primaryBtnColor;
+  }
+
+  .hero-link-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .underline {
+    border-bottom: 3px solid $primaryBtnColor;
+    width: 65%;
+    opacity: 0.4;
+    margin-top: -14px;
+  }
+
+  @media screen and (min-width: $mobileScreenBreakpoint) {
+    .challenges-hero-img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 25rem;
+      height: 400px;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .online-challenges-btn {
+      @include primaryBtn;
+      /* using a negative value for margin to push the buttons down past image */
+      margin-bottom: -30px;
+      color: #fff;
+    }
+
+    .onsite-challenges-btn {
+      @include primaryBtn;
+      /* using a negative value for margin to push the buttons down past image */
+      margin-bottom: -30px;
+    }
+
+    a {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .underline {
+      display: none;
+    }
   }
 }

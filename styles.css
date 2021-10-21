@@ -15,14 +15,14 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 220px;
+  height: 160px;
 }
 .navbar .logo {
-  border-radius: 4rem;
-  height: 7rem;
-  width: 7rem;
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
   margin-left: 2rem;
-  margin-top: 2rem;
+  margin-right: 1rem;
   background-color: #b986e2;
 }
 .navbar .company-name {
@@ -32,11 +32,12 @@ body {
   color: #333333;
 }
 .navbar .company-name span:nth-of-type(1) {
-  font-size: 2.4rem;
+  font-size: 1.7rem;
   font-weight: 400;
 }
 .navbar .company-name span:nth-of-type(2) {
-  font-size: 1.6rem;
+  margin-top: 7px;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 .navbar .menu {
@@ -46,9 +47,9 @@ body {
   background-image: url(/img/menu.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 80px;
-  width: 80px;
-  margin-right: 4rem;
+  height: 50px;
+  width: 50px;
+  margin-right: 3rem;
 }
 @media screen and (min-width: 800px) {
   .navbar {
@@ -62,6 +63,8 @@ body {
     grid-column: 1/2;
     height: 5.5rem;
     width: 5.5rem;
+    margin-top: 2rem;
+    margin-right: 25px;
   }
   .navbar .company-name {
     display: flex;
@@ -69,7 +72,6 @@ body {
     align-items: center;
     grid-column: 2/13;
     margin-top: 40px;
-    margin-left: 25px;
     width: 100%;
     font-size: 2.2rem;
     letter-spacing: 0.1rem;
@@ -106,36 +108,17 @@ body {
   grid-column: span 12;
 }
 .hero-content .challenges-hero-img {
-  position: relative;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  grid-column: span 12;
-  height: 400px;
+  flex-direction: column;
+  align-items: center;
+  height: 270px;
   background-color: #dfe6ee;
   background-image: url(img/img-placeholder.jpg);
-  background-size: 30%;
+  background-size: 15rem;
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero-content .online-challenges-btn {
-  /* using a negative value for margin to push the buttons down past image */
-  margin-bottom: -30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  height: 55px;
-  width: 270px;
-  border-radius: 0.3rem;
-  text-align: center;
-  background-color: #6757f5;
-}
 .hero-content .onsite-challenges-btn {
-  /* using a negative value for margin to push the buttons down past image */
-  margin-bottom: -30px;
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
@@ -147,12 +130,91 @@ body {
   border-radius: 0.3rem;
   text-align: center;
   background-color: #6757f5;
+  margin-top: 240px;
 }
 .hero-content a {
   font-size: 1.5rem;
   font-weight: 400;
   text-decoration: none;
   color: #fff;
+}
+.hero-content .online-challenges-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 55px;
+  width: 270px;
+  border-radius: 0.3rem;
+  text-align: center;
+  background-color: #6757f5;
+  background-color: #fff;
+  color: #6757f5;
+}
+.hero-content .hero-link-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content .underline {
+  border-bottom: 3px solid #6757f5;
+  width: 65%;
+  opacity: 0.4;
+  margin-top: -14px;
+}
+@media screen and (min-width: 800px) {
+  .hero-content .challenges-hero-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25rem;
+    height: 400px;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .hero-content .online-challenges-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 55px;
+    width: 270px;
+    border-radius: 0.3rem;
+    text-align: center;
+    background-color: #6757f5;
+    /* using a negative value for margin to push the buttons down past image */
+    margin-bottom: -30px;
+    color: #fff;
+  }
+  .hero-content .onsite-challenges-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 55px;
+    width: 270px;
+    border-radius: 0.3rem;
+    text-align: center;
+    background-color: #6757f5;
+    /* using a negative value for margin to push the buttons down past image */
+    margin-bottom: -30px;
+  }
+  .hero-content a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+  }
+  .hero-content .underline {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
