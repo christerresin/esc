@@ -217,4 +217,29 @@ body {
   }
 }
 
+.divider {
+  grid-column: span 12;
+  background-color: red;
+  opacity: 0.2;
+  height: 130px;
+}
+
+.quote {
+  grid-column: span 12;
+  display: flex;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.quote .quote-img {
+  background-color: #b986e2;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+.quote .quote-right {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=styles.css.map */
