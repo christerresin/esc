@@ -7,6 +7,23 @@ $secondaryFontColor: #4e4e4e;
 $imagePlaceholderColor: #dfe6ee;
 $mobileScreenBreakpoint: 800px;
 
+@mixin primaryBtn {
+  /* using a negative value for margin to push the buttons down past image */
+  margin-bottom: -30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 55px;
+  width: 270px;
+  border-radius: 0.3rem;
+  text-align: center;
+
+  background-color: $primaryBtnColor;
+}
+
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -24,12 +41,14 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 150px;
+  height: 220px;
 
   .logo {
     border-radius: 4rem;
     height: 7rem;
     width: 7rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
 
     background-color: $primaryColor;
   }
@@ -37,16 +56,18 @@ body {
   .company-name {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
 
     color: $primaryFontColor;
 
     span:nth-of-type(1) {
-      font-size: 2rem;
+      font-size: 2.4rem;
+      font-weight: 400;
     }
 
     span:nth-of-type(2) {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
+      font-weight: 400;
     }
   }
 
@@ -54,36 +75,48 @@ body {
     display: none;
   }
 
-  .menuBtn {
+  .menu-btn {
     background-image: url(/img/menu.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 80px;
     width: 80px;
+    margin-right: 4rem;
   }
 
   @media screen and (min-width: $mobileScreenBreakpoint) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 110px;
+    grid-template-rows: 100px;
     grid-column: span 12;
+    height: 11rem;
 
     .logo {
       grid-column: 1 / 2;
       height: 5.5rem;
       width: 5.5rem;
-      margin-left: 20px;
-      margin-top: 20px;
     }
 
     .company-name {
       display: flex;
+      flex-direction: row;
+      align-items: center;
       grid-column: 2 / 13;
       margin-top: 40px;
       margin-left: 25px;
+      width: 100%;
 
       font-size: 2.2rem;
       letter-spacing: 0.1rem;
+
+      span:nth-of-type(1) {
+        font-size: 2.2rem;
+        margin-right: 0.3rem;
+      }
+
+      span:nth-of-type(2) {
+        font-size: 2.2rem;
+      }
     }
 
     .menu {
@@ -92,7 +125,6 @@ body {
       justify-content: space-evenly;
       margin-left: 100px;
       margin-right: 100px;
-      margin-bottom: 33px;
       grid-column: span 12;
       padding: 0;
 
@@ -105,11 +137,14 @@ body {
         color: $secondaryFontColor;
       }
     }
+
+    .menu-btn {
+      display: none;
+    }
   }
 }
 
-.content {
-  background-color: red;
+.hero-content {
   grid-column: span 12;
 
   .challenges-hero-img {
@@ -126,21 +161,12 @@ body {
     background-position: center;
   }
 
-  .primaryBtn {
-    /* using a negative value for margin to push the buttons down past image */
-    margin-bottom: -30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    height: 55px;
-    width: 270px;
-    border-radius: 0.3rem;
-    text-align: center;
+  .online-challenges-btn {
+    @include primaryBtn;
+  }
 
-    background-color: $primaryBtnColor;
+  .onsite-challenges-btn {
+    @include primaryBtn;
   }
 
   a {
