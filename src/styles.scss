@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$primaryBtnColor: rgba(103, 87, 245, 255);
+$primaryColor: rgba(185, 134, 226, 255);
+$imagePlaceholderColor: #dfe6ee;
+
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-auto-flow: dense;
+
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 105px;
+  grid-column: span 12;
+
+  .logo {
+    border-radius: 3rem;
+    grid-column: 1 / 2;
+    height: 85px;
+    width: 85px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    background-color: $primaryColor;
+  }
+
+  .company-name {
+    display: flex;
+    grid-column: 2 / 13;
+    margin-top: 40px;
+
+    font-size: 2rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 33px;
+    grid-column: span 12;
+
+    list-style-type: none;
+
+    li {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.content {
+  background-color: red;
+  grid-column: span 12;
+
+  .challenges-hero-img {
+    grid-column: span 12;
+    height: 400px;
+    background-color: $imagePlaceholderColor;
+    background-image: url(img/img-placeholder.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .primaryBtn {
+    box-sizing: border-box;
+    height: 50px;
+    width: 200px;
+
+    background-color: $primaryBtnColor;
+  }
+}
