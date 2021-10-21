@@ -10,42 +10,80 @@ body {
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 110px;
   grid-column: span 12;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
 }
 .navbar .logo {
-  border-radius: 3rem;
-  grid-column: 1/2;
-  height: 85px;
-  width: 85px;
-  margin-left: 15px;
-  margin-top: 15px;
+  border-radius: 4rem;
+  height: 7rem;
+  width: 7rem;
   background-color: #b986e2;
 }
 .navbar .company-name {
   display: flex;
-  grid-column: 2/13;
-  margin-top: 40px;
-  margin-left: 25px;
-  font-size: 2.2rem;
-  letter-spacing: 0.1rem;
+  flex-direction: column;
+  width: 40%;
+  color: #333333;
+}
+.navbar .company-name span:nth-of-type(1) {
+  font-size: 2rem;
+}
+.navbar .company-name span:nth-of-type(2) {
+  font-size: 1.5rem;
 }
 .navbar .menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 33px;
-  grid-column: span 12;
-  padding: 0;
-  list-style-type: none;
+  display: none;
 }
-.navbar .menu li {
-  font-size: 1.1rem;
-  font-weight: 500;
+.navbar .menuBtn {
+  background-image: url(/img/menu.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 80px;
+}
+@media screen and (min-width: 800px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 110px;
+    grid-column: span 12;
+  }
+  .navbar .logo {
+    grid-column: 1/2;
+    height: 5.5rem;
+    width: 5.5rem;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .navbar .company-name {
+    display: flex;
+    grid-column: 2/13;
+    margin-top: 40px;
+    margin-left: 25px;
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .navbar .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 33px;
+    grid-column: span 12;
+    padding: 0;
+    list-style-type: none;
+  }
+  .navbar .menu li {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #4e4e4e;
+  }
 }
 
 .content {

@@ -2,7 +2,10 @@
 
 $primaryBtnColor: rgba(103, 87, 245, 255);
 $primaryColor: rgba(185, 134, 226, 255);
+$primaryFontColor: #333333;
+$secondaryFontColor: #4e4e4e;
 $imagePlaceholderColor: #dfe6ee;
+$mobileScreenBreakpoint: 800px;
 
 body {
   display: grid;
@@ -16,47 +19,91 @@ body {
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 110px;
   grid-column: span 12;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
 
   .logo {
-    border-radius: 3rem;
-    grid-column: 1 / 2;
-    height: 85px;
-    width: 85px;
-    margin-left: 15px;
-    margin-top: 15px;
+    border-radius: 4rem;
+    height: 7rem;
+    width: 7rem;
 
     background-color: $primaryColor;
   }
 
   .company-name {
     display: flex;
-    grid-column: 2 / 13;
-    margin-top: 40px;
-    margin-left: 25px;
+    flex-direction: column;
+    width: 40%;
 
-    font-size: 2.2rem;
-    letter-spacing: 0.1rem;
+    color: $primaryFontColor;
+
+    span:nth-of-type(1) {
+      font-size: 2rem;
+    }
+
+    span:nth-of-type(2) {
+      font-size: 1.5rem;
+    }
   }
 
   .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 33px;
+    display: none;
+  }
+
+  .menuBtn {
+    background-image: url(/img/menu.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+  }
+
+  @media screen and (min-width: $mobileScreenBreakpoint) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 110px;
     grid-column: span 12;
-    padding: 0;
 
-    list-style-type: none;
+    .logo {
+      grid-column: 1 / 2;
+      height: 5.5rem;
+      width: 5.5rem;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
 
-    li {
-      font-size: 1.1rem;
-      font-weight: 500;
+    .company-name {
+      display: flex;
+      grid-column: 2 / 13;
+      margin-top: 40px;
+      margin-left: 25px;
+
+      font-size: 2.2rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 33px;
+      grid-column: span 12;
+      padding: 0;
+
+      list-style-type: none;
+
+      li {
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: $secondaryFontColor;
+      }
     }
   }
 }
