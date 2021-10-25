@@ -242,6 +242,7 @@ body {
 .quote {
   grid-column: span 12;
   display: flex;
+  margin-top: 130px;
 
   font-size: 1.3rem;
   font-style: italic;
@@ -282,6 +283,7 @@ body {
 .challenges {
   grid-column: span 12;
   text-align: center;
+  margin-top: 65px;
 
   .challenges-header {
     font-size: 1.7rem;
