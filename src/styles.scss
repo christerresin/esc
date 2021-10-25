@@ -121,6 +121,10 @@ body {
       }
     }
 
+    .navbar {
+      grid-column: span 12;
+    }
+
     .menu {
       display: flex;
       flex-direction: row;

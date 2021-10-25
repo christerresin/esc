@@ -84,6 +84,9 @@ body {
   .header .company-name span:nth-of-type(2) {
     font-size: 2.2rem;
   }
+  .header .navbar {
+    grid-column: span 12;
+  }
   .header .menu {
     display: flex;
     flex-direction: row;
