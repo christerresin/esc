@@ -263,12 +263,13 @@ body {
   text-align: center;
 }
 .header .header-content {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 500;
   color: #333333;
 }
 
 .slider {
+  margin-top: 30px;
   grid-column: span 12;
   text-align: center;
   overflow: hidden;
@@ -279,10 +280,6 @@ body {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  /*
-  scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: mandatory;
-  */
 }
 .slider .slides::-webkit-scrollbar {
   width: 10px;
@@ -298,9 +295,10 @@ body {
 .slider .slides > div {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 500px;
-  height: 500px;
-  margin-right: 50px;
+  width: 400px;
+  height: 480px;
+  margin-right: 25px;
+  margin-left: 25px;
   border-radius: 10px;
   background: #eee;
   transform-origin: center center;
