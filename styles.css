@@ -110,6 +110,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  object-fit: cover;
   width: 100%;
   height: 274px;
 }
@@ -319,6 +320,7 @@ body {
 .challenges .slider .slides > .card img {
   height: 219px;
   width: 363px;
+  object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
 .challenges .slider .slides > .card .card-header {
@@ -393,7 +395,34 @@ body {
   font-style: normal;
   line-height: 18.75px;
 }
-.challenges a {
+.challenges .all-challenges {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.challenges a[title~=on-site] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 66px;
+  width: 308px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #8acfe5;
+  color: #011827;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 10px;
+  color: #011827;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+.challenges a[title~=online] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,23 +442,27 @@ body {
   text-decoration-color: #36769d;
   font-size: 16px;
   line-height: 18.75px;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  font-style: normal;
+  font-weight: 700;
   text-decoration: underline;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .company-information {
   grid-column: span 12;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-weight: 500;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
+  height: 500px;
+  background-color: #011827;
+  color: #fff;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
 }
-.company-information a {
+.company-information p {
+  margin: 95px 20px 0px 20px;
+}
+.company-information a[title~=story] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,44 +477,41 @@ body {
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
-  background-color: #fff;
-  color: #36769d;
-  text-decoration-color: #36769d;
-  font-size: 16px;
-  line-height: 18.75px;
-  border: 1px solid #6757f5;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 40px auto 0 auto;
+  background-color: #011827;
+  color: #8acfe5;
+  border: 2px solid #8acfe5;
 }
 
 .bookings {
   grid-column: span 12;
-  margin-top: 60px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 .bookings img {
-  margin-top: 50px;
-  background-image: url(/img/img-placeholder.jpg);
-  background-color: #dfe6ee;
-  background-size: 12rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 200px;
+  max-height: 300px;
   width: 100%;
+  object-fit: cover;
 }
 .bookings h4 {
-  margin-left: 30px;
+  margin-left: 20px;
   margin-right: 20px;
-  font-size: 1.5rem;
-  font-weight: 500;
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37.5px;
 }
 .bookings p {
-  margin-left: 30px;
+  margin-left: 20px;
   margin-right: 20px;
-  font-size: 1.2rem;
+  text-align: left;
+  font-size: 24px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
 }
-.bookings a[title~=on-site] {
+.bookings a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -496,38 +526,14 @@ body {
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
-  border: 1px solid #6757f5;
-  margin-left: 30px;
-  margin-bottom: 10px;
+  margin-top: 55px;
+  margin-left: 21px;
+  margin-bottom: 60px;
   color: #fff;
-  font-weight: 500;
-  font-size: 1.3rem;
-}
-.bookings a[title~=online] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  height: 66px;
-  width: 308px;
-  border-radius: 4px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #8acfe5;
-  color: #011827;
-  font-size: 24px;
+  background-color: #e3170a;
   font-weight: 700;
-  font-style: normal;
-  background-color: #fff;
-  color: #36769d;
-  text-decoration-color: #36769d;
-  font-size: 16px;
-  line-height: 18.75px;
-  margin: 0 0 0 30px;
-  justify-content: flex-start;
-  font-size: 1.3rem;
-  font-weight: 400;
-  text-decoration: underline;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 footer {
