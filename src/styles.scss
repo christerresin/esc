@@ -522,18 +522,31 @@ body {
 
 footer {
   grid-column: span 12;
-  background-color: $imagePlaceholderColor;
+  background-color: $defaultDark;
+  color: #fff;
   text-align: left;
   margin-top: 50px;
 
   p {
     margin-top: 0;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
   }
 
-  h5 {
-    margin-bottom: 5px;
-    font-weight: 600;
-    font-size: 1.3rem;
+  .footer-header {
+    margin-top: 64px;
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .footer-list-menu {
+    margin-bottom: 7px;
+
+    font-size: 18px;
+    font-weight: 700;
   }
 
   ul {
@@ -541,23 +554,25 @@ footer {
     padding-left: 0;
     margin-top: 0;
 
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 21px;
   }
 
   .about {
-    margin: 0 4rem 0 4rem;
+    margin: 0 21px 0 21px;
   }
 
   .links {
     display: flex;
+    flex-direction: column;
   }
 
   .site-map {
-    margin: 0 4rem 0 4rem;
+    margin: 0 21px 0 21px;
   }
 
   .social {
-    margin: 0 4rem 0 4rem;
+    margin: 0 21px 0 21px;
   }
 }
