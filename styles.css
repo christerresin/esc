@@ -263,8 +263,10 @@ body {
   margin-top: 65px;
 }
 .challenges .challenges-header {
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 37.5px;
   color: #333333;
 }
 .challenges .slider {
@@ -296,23 +298,68 @@ body {
 .challenges .slider .slides::-webkit-scrollbar-track {
   background: transparent;
 }
-.challenges .slider .slides > div {
+.challenges .slider .slides > .card {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 400px;
-  height: 480px;
+  height: 446px;
+  width: 363px;
   margin-right: 25px;
   margin-left: 25px;
-  border-radius: 10px;
-  background: #eee;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background: #fff;
   transform-origin: center center;
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.challenges .slider .slides > .card img {
+  height: 219px;
+  width: 363px;
+  border-radius: 8px 8px 0 0;
+}
+.challenges .slider .slides > .card .card-header {
+  margin-left: 12px;
+  margin-top: 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 33px;
+}
+.challenges .slider .slides > .card .rating {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  font-size: 100px;
+  margin-left: 17px;
+}
+.challenges .slider .slides > .card .card-rating-star {
+  background-image: url(/img/star_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23px;
+  height: 26px;
+}
+.challenges .slider .slides > .card .card-rating-star-unfilled {
+  background-image: url(/img/star_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23px;
+  height: 26px;
+}
+.challenges .slider .slides > .card span {
+  font-size: 14px;
+  line-height: 16px;
+}
+.challenges .slider .slides > .card .card-content {
+  margin-left: 18px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
 }
 .challenges a {
   display: flex;
