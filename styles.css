@@ -18,6 +18,11 @@ body {
   justify-content: space-between;
   height: 144px;
   background-color: #011827;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
 }
 .header .logo {
   height: 82px;
@@ -26,11 +31,9 @@ body {
   background-color: #b986e2;
 }
 .header .company-name {
-  height: 78px;
-  width: 84px;
-  margin: 25px 90px 35px 0;
-  color: #fff;
-  font-size: 1.3rem;
+  height: 84px;
+  width: 78px;
+  margin: 25px 90px 35px -10px;
 }
 .header .menu {
   display: none;
@@ -107,27 +110,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 270px;
-  background-color: #dfe6ee;
-  background-image: url(img/img-placeholder.jpg);
-  background-size: 15rem;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100%;
+  height: 274px;
 }
 .hero-content .onsite-challenges-btn {
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  height: 55px;
-  width: 270px;
-  border-radius: 0.3rem;
+  height: 66px;
+  width: 308px;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  background-color: #6757f5;
-  margin-top: 240px;
+  background-color: #8acfe5;
+  color: #011827;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 37px;
 }
 .hero-content a {
   font-size: 1.5rem;
@@ -135,25 +136,26 @@ body {
   color: #fff;
 }
 .hero-content .online-challenges-btn {
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  height: 55px;
-  width: 270px;
-  border-radius: 0.3rem;
+  height: 66px;
+  width: 308px;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  background-color: #6757f5;
+  background-color: #8acfe5;
+  color: #011827;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
   background-color: #fff;
-  color: #6757f5;
-  text-decoration-color: #6757f5;
-  text-underline-offset: 5px;
+  color: #36769d;
+  text-decoration-color: #36769d;
+  font-size: 16px;
+  line-height: 18.75px;
   text-decoration: underline;
-  background-color: #fff;
-  color: #6757f5;
 }
 .hero-content .hero-link-btn {
   display: flex;
@@ -172,35 +174,39 @@ body {
     justify-content: center;
   }
   .hero-content .online-challenges-btn {
-    margin-left: 10px;
-    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: 55px;
-    width: 270px;
-    border-radius: 0.3rem;
+    height: 66px;
+    width: 308px;
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
-    background-color: #6757f5;
+    background-color: #8acfe5;
+    color: #011827;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
     /* using a negative value for margin to push the buttons down past image */
     margin-bottom: -30px;
     color: #fff;
   }
   .hero-content .onsite-challenges-btn {
-    margin-left: 10px;
-    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: 55px;
-    width: 270px;
-    border-radius: 0.3rem;
+    height: 66px;
+    width: 308px;
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
-    background-color: #6757f5;
+    background-color: #8acfe5;
+    color: #011827;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
     /* using a negative value for margin to push the buttons down past image */
     margin-bottom: -30px;
   }
@@ -218,12 +224,13 @@ body {
 .quote {
   grid-column: span 12;
   display: flex;
-  margin-top: 130px;
-  font-size: 1.3rem;
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: 1px;
+  margin-top: 67px;
+  font-weight: 400;
+  line-height: 28px;
   color: #333333;
+}
+.quote .quote-left {
+  margin-left: 21px;
 }
 .quote .quote-img {
   background-color: #dfe6ee;
@@ -232,21 +239,22 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 100%;
-  height: 70px;
-  width: 70px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  height: 73px;
+  width: 73px;
 }
 .quote .quote-right {
   display: flex;
   flex-direction: column;
-  font-weight: 500;
+  margin-left: 22px;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 28px;
 }
 .quote cite {
-  font-size: 1.2rem;
+  margin-top: 10px;
+  font-size: 18px;
   font-style: normal;
   letter-spacing: 0;
-  margin-top: 10px;
 }
 
 .challenges {
@@ -307,22 +315,25 @@ body {
   font-size: 100px;
 }
 .challenges a {
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  height: 55px;
-  width: 270px;
-  border-radius: 0.3rem;
+  height: 66px;
+  width: 308px;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  background-color: #6757f5;
+  background-color: #8acfe5;
+  color: #011827;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
   background-color: #fff;
-  color: #6757f5;
-  text-decoration-color: #6757f5;
-  text-underline-offset: 5px;
+  color: #36769d;
+  text-decoration-color: #36769d;
+  font-size: 16px;
+  line-height: 18.75px;
   font-size: 1.5rem;
   font-weight: 400;
   text-decoration: underline;
@@ -340,22 +351,25 @@ body {
   letter-spacing: 1px;
 }
 .company-information a {
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  height: 55px;
-  width: 270px;
-  border-radius: 0.3rem;
+  height: 66px;
+  width: 308px;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  background-color: #6757f5;
+  background-color: #8acfe5;
+  color: #011827;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
   background-color: #fff;
-  color: #6757f5;
-  text-decoration-color: #6757f5;
-  text-underline-offset: 5px;
+  color: #36769d;
+  text-decoration-color: #36769d;
+  font-size: 16px;
+  line-height: 18.75px;
   border: 1px solid #6757f5;
   margin-right: auto;
   margin-left: auto;
@@ -389,18 +403,20 @@ body {
   font-weight: 400;
 }
 .bookings a[title~=on-site] {
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  height: 55px;
-  width: 270px;
-  border-radius: 0.3rem;
+  height: 66px;
+  width: 308px;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  background-color: #6757f5;
+  background-color: #8acfe5;
+  color: #011827;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
   border: 1px solid #6757f5;
   margin-left: 30px;
   margin-bottom: 10px;
@@ -409,22 +425,25 @@ body {
   font-size: 1.3rem;
 }
 .bookings a[title~=online] {
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  height: 55px;
-  width: 270px;
-  border-radius: 0.3rem;
+  height: 66px;
+  width: 308px;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  background-color: #6757f5;
+  background-color: #8acfe5;
+  color: #011827;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
   background-color: #fff;
-  color: #6757f5;
-  text-decoration-color: #6757f5;
-  text-underline-offset: 5px;
+  color: #36769d;
+  text-decoration-color: #36769d;
+  font-size: 16px;
+  line-height: 18.75px;
   margin: 0 0 0 30px;
   justify-content: flex-start;
   font-size: 1.3rem;
