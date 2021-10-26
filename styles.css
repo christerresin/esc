@@ -17,33 +17,26 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 144px;
+  background-color: #011827;
 }
 .header .logo {
   height: 82px;
   width: 128px;
-  margin: 26 0 36 27;
+  margin: 26px 0 36px 27px;
   background-color: #b986e2;
 }
 .header .company-name {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  color: #333333;
-}
-.header .company-name span:nth-of-type(1) {
-  font-size: 1.7rem;
-  font-weight: 400;
-}
-.header .company-name span:nth-of-type(2) {
-  margin-top: 7px;
-  font-size: 1.1rem;
-  font-weight: 400;
+  height: 78px;
+  width: 84px;
+  margin: 25px 90px 35px 0;
+  color: #fff;
+  font-size: 1.3rem;
 }
 .header .menu {
   display: none;
 }
 .header .menu-btn {
-  background-image: url(/img/menu.png);
+  background-image: url(/img/menu-white.png);
   background-size: 100%;
   background-repeat: no-repeat;
   height: 50px;

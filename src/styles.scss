@@ -55,33 +55,23 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 144px;
+  background-color: $defaultDark;
 
   .logo {
     height: 82px;
     width: 128px;
-    margin: 26 0 36 27;
+    margin: 26px 0 36px 27px;
 
     background-color: $primaryColor;
   }
 
   .company-name {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    height: 78px;
+    width: 84px;
+    margin: 25px 90px 35px 0;
 
-    color: $primaryFontColor;
-
-    span:nth-of-type(1) {
-      font-size: 1.7rem;
-      font-weight: 400;
-    }
-
-    span:nth-of-type(2) {
-      margin-top: 7px;
-
-      font-size: 1.1rem;
-      font-weight: 400;
-    }
+    color: #fff;
+    font-size: 1.3rem;
   }
 
   .menu {
@@ -89,7 +79,7 @@ body {
   }
 
   .menu-btn {
-    background-image: url(/img/menu.png);
+    background-image: url(/img/menu-white.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 50px;
