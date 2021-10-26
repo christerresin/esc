@@ -324,6 +324,7 @@ body {
 .challenges .slider .slides > .card .card-header {
   margin-left: 12px;
   margin-top: 12px;
+  margin-bottom: 0px;
   font-weight: 400;
   font-style: normal;
   font-size: 28px;
@@ -333,6 +334,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin-left: 17px;
 }
 .challenges .slider .slides > .card .card-rating-star {
@@ -350,11 +352,14 @@ body {
   height: 26px;
 }
 .challenges .slider .slides > .card span {
+  margin-top: 3px;
+  margin-left: 10px;
   font-size: 14px;
   line-height: 16px;
 }
 .challenges .slider .slides > .card .card-content {
   margin-left: 18px;
+  margin-top: 18px;
   text-align: left;
   font-size: 18px;
   font-weight: 400;
