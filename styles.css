@@ -18,22 +18,28 @@ body {
   justify-content: space-between;
   height: 144px;
   background-color: #011827;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-size: 24px;
   line-height: 28px;
   color: #fff;
 }
 .header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 82px;
+  margin: 26px 0 36px 27px;
+}
+.header .logo .logo-img {
   height: 82px;
   width: 128px;
-  margin: 26px 0 36px 27px;
-  background-color: #b986e2;
+  margin-right: 13px;
 }
-.header .company-name {
+.header .logo .company-name {
   height: 84px;
   width: 78px;
-  margin: 25px 90px 35px -10px;
 }
 .header .menu {
   display: none;
