@@ -444,8 +444,7 @@ footer {
   grid-column: span 12;
   background-color: #dfe6ee;
   text-align: left;
-  margin: 0 4rem 0 4rem;
-  font-size: 1.3rem;
+  margin-top: 50px;
 }
 footer p {
   margin-top: 0;
@@ -458,6 +457,21 @@ footer h5 {
 footer ul {
   list-style-type: none;
   padding-left: 0;
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer .about {
+  margin: 0 4rem 0 4rem;
+}
+footer .links {
+  display: flex;
+}
+footer .site-map {
+  margin: 0 4rem 0 4rem;
+}
+footer .social {
+  margin: 0 4rem 0 4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
