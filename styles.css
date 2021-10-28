@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* transform @mixins to @extend with %primaryBtn, %secondaryBtn */
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -54,39 +55,38 @@ body {
 }
 @media screen and (min-width: 800px) {
   .header {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px;
+    display: flex;
+    flex-direction: column;
     grid-column: span 12;
-    height: 175px;
+    height: 216px;
   }
   .header .logo {
-    grid-column: 1/2;
-    height: 88px;
-    width: 88px;
-    margin-top: 2rem;
-    margin-right: 25px;
-    margin-left: 4rem;
-  }
-  .header .company-name {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    grid-column: 2/13;
-    margin-top: 40px;
     width: 100%;
-    font-size: 2.2rem;
-    letter-spacing: 0.1rem;
+    height: 128px;
+    margin-top: 27px;
+    margin-left: 26px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
-  .header .company-name span:nth-of-type(1) {
-    font-size: 2.2rem;
-    margin-right: 0.3rem;
+  .header .logo .logo-img {
+    height: 82px;
+    width: 128px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
-  .header .company-name span:nth-of-type(2) {
-    font-size: 2.2rem;
+  .header .logo .company-name {
+    height: 47px;
+    width: 404px;
+    margin-bottom: 4px;
+    margin-left: 24px;
+    align-self: flex-end;
+    font-size: 40px;
+    line-height: 47px;
   }
   .header .navbar {
-    grid-column: span 12;
+    width: 100%;
   }
   .header .menu {
     display: flex;
@@ -99,10 +99,13 @@ body {
     list-style-type: none;
   }
   .header .menu li {
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #4e4e4e;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #fff;
+  }
+  .header .menu li:hover {
+    color: #8acfe5;
   }
   .header .menu-btn {
     display: none;
