@@ -257,8 +257,8 @@ body {
   .quote-container {
     display: flex;
     flex-direction: row;
-    margin-left: 107px;
-    margin-right: 107px;
+    margin-left: 6.7rem;
+    margin-right: 6.7rem;
   }
   .quote-container .quote .quote-img {
     height: 107px;
@@ -288,6 +288,8 @@ body {
   text-align: left;
   overflow: hidden;
   display: block;
+  box-sizing: border-box;
+  padding: 2px;
 }
 .challenges .slider .slides {
   display: flex;
@@ -304,7 +306,7 @@ body {
   height: 10px;
 }
 .challenges .slider .slides::-webkit-scrollbar-thumb {
-  background: black;
+  background: #011827;
   border-radius: 10px;
 }
 .challenges .slider .slides::-webkit-scrollbar-track {
@@ -410,6 +412,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  margin-top: 47px;
 }
 .challenges a[title~=on-site] {
   display: flex;
@@ -458,6 +461,64 @@ body {
   font-style: normal;
   font-weight: 700;
   text-decoration: underline;
+}
+@media screen and (min-width: 800px) {
+  .challenges .challenges-header {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .challenges .slider {
+    padding: 3px;
+  }
+  .challenges .slider .slides {
+    flex-direction: row;
+    justify-content: space-around;
+    scroll-snap-type: none;
+    overflow-x: visible;
+    scroll-behavior: none;
+    -webkit-overflow-scrolling: none;
+  }
+  .challenges .slider .slides .card:nth-of-type(3) {
+    display: none;
+  }
+  .challenges .all-challenges {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 87px;
+  }
+  .challenges a[title~=online] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 66px;
+    width: 308px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #8acfe5;
+    color: #011827;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 10px;
+    margin-right: 9px;
+    background-color: #e3170a;
+    color: #fff;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .challenges a[title~=on-site] {
+    margin-left: 9px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .challenges .slider .slides .card:nth-of-type(3) {
+    display: flex;
+  }
 }
 
 .company-information {

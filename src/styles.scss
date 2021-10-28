@@ -6,6 +6,7 @@ $primaryFontColor: #333333;
 $secondaryFontColor: #4e4e4e;
 $imagePlaceholderColor: #dfe6ee;
 $mobileScreenBreakpoint: 800px;
+$desktopScreenBreakpoint: 1200px;
 $defaultRed: #e3170a;
 $defaultBlue: #36769d;
 $secondaryBlue: #8acfe5;
@@ -274,8 +275,8 @@ body {
   @media screen and (min-width: $mobileScreenBreakpoint) {
     display: flex;
     flex-direction: row;
-    margin-left: 107px;
-    margin-right: 107px;
+    margin-left: 6.7rem;
+    margin-right: 6.7rem;
 
     .quote {
       .quote-img {
@@ -310,6 +311,8 @@ body {
     text-align: left;
     overflow: hidden;
     display: block;
+    box-sizing: border-box;
+    padding: 2px;
 
     .slides {
       display: flex;
@@ -330,7 +333,7 @@ body {
     }
 
     .slides::-webkit-scrollbar-thumb {
-      background: black;
+      background: $defaultDark;
       border-radius: 10px;
     }
 
@@ -438,6 +441,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: 47px;
   }
 
   a[title~='on-site'] {
@@ -459,6 +463,66 @@ body {
     font-style: normal;
     font-weight: 700;
     text-decoration: underline;
+  }
+
+  @media screen and (min-width: $mobileScreenBreakpoint) {
+    .challenges-header {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    .slider {
+      padding: 3px;
+
+      .slides {
+        flex-direction: row;
+        justify-content: space-around;
+        scroll-snap-type: none;
+
+        overflow-x: visible;
+
+        scroll-behavior: none;
+        -webkit-overflow-scrolling: none;
+
+        .card:nth-of-type(3) {
+          display: none;
+        }
+      }
+    }
+
+    .all-challenges {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 87px;
+    }
+
+    a[title~='online'] {
+      @include primaryBtn;
+      margin-bottom: 10px;
+      margin-right: 9px;
+
+      background-color: $defaultRed;
+      color: #fff;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    a[title~='on-site'] {
+      margin-left: 9px;
+    }
+  }
+
+  @media screen and (min-width: $desktopScreenBreakpoint) {
+    .slider {
+      .slides {
+        .card:nth-of-type(3) {
+          display: flex;
+        }
+      }
+    }
   }
 }
 
