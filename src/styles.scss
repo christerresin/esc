@@ -187,12 +187,6 @@ body {
     margin-top: 37px;
   }
 
-  a {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #fff;
-  }
-
   .online-challenges-btn {
     @include secondaryBtn;
     text-decoration: underline;
@@ -207,37 +201,29 @@ body {
 
   @media screen and (min-width: $mobileScreenBreakpoint) {
     .challenges-hero-img {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 25rem;
-      height: 400px;
+      height: 468px;
+    }
+
+    .hero-btn-container {
+      display: flex;
       flex-direction: row-reverse;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
+      margin-top: -35px;
     }
 
     .online-challenges-btn {
       @include primaryBtn;
-      /* using a negative value for margin to push the buttons down past image */
-      margin-bottom: -30px;
+      margin-right: 9px;
+
+      background-color: $defaultRed;
       color: #fff;
     }
 
     .onsite-challenges-btn {
       @include primaryBtn;
-      /* using a negative value for margin to push the buttons down past image */
-      margin-bottom: -30px;
-    }
-
-    a {
-      font-size: 1.5rem;
-      font-weight: 400;
-      text-decoration: none;
-      color: #fff;
-    }
-
-    .underline {
-      display: none;
+      margin-top: 0px;
+      margin-left: 9px;
     }
   }
 }
