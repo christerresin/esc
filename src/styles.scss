@@ -7,11 +7,11 @@ $secondaryFontColor: #4e4e4e;
 $imagePlaceholderColor: #dfe6ee;
 $mobileScreenBreakpoint: 800px;
 $desktopScreenBreakpoint: 1200px;
-$defaultRed: #e3170a;
-$defaultBlue: #36769d;
-$secondaryBlue: #8acfe5;
-$defaultDark: #011827;
-$defaultGray: #b6bdb5;
+$red: #e3170a;
+$darkBlue: #36769d;
+$lightBlue: #8acfe5;
+$dark: #011827;
+$gray: #b6bdb5;
 
 /* transform @mixins to @extend with %primaryBtn, %secondaryBtn */
 
@@ -26,8 +26,8 @@ $defaultGray: #b6bdb5;
   text-align: center;
   text-decoration: none;
 
-  background-color: $secondaryBlue;
-  color: $defaultDark;
+  background-color: $lightBlue;
+  color: $dark;
 
   font-size: 24px;
   font-weight: 700;
@@ -37,8 +37,8 @@ $defaultGray: #b6bdb5;
 @mixin secondaryBtn {
   @include primaryBtn;
   background-color: #fff;
-  color: $defaultBlue;
-  text-decoration-color: $defaultBlue;
+  color: $darkBlue;
+  text-decoration-color: $darkBlue;
   font-size: 16px;
   line-height: 18.75px;
 }
@@ -62,7 +62,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 144px;
-  background-color: $defaultDark;
+  background-color: $dark;
 
   font-weight: 700;
   font-style: normal;
@@ -114,7 +114,7 @@ body {
       width: 100%;
       height: 128px;
       margin-top: 27px;
-      margin-left: 26px;
+      margin-left: 27px;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
@@ -161,7 +161,7 @@ body {
       }
 
       li:hover {
-        color: $secondaryBlue;
+        color: $lightBlue;
       }
     }
 
@@ -217,7 +217,7 @@ body {
       @include primaryBtn;
       margin-right: 9px;
 
-      background-color: $defaultRed;
+      background-color: $red;
       color: #fff;
     }
 
@@ -334,7 +334,7 @@ body {
     }
 
     .slides::-webkit-scrollbar-thumb {
-      background: $defaultDark;
+      background: $dark;
       border-radius: 10px;
     }
 
@@ -426,7 +426,7 @@ body {
         margin-top: auto;
         margin-bottom: 12px;
         color: #fff;
-        background-color: $defaultRed;
+        background-color: $red;
         width: 179px;
         height: 44px;
 
@@ -449,7 +449,7 @@ body {
     @include primaryBtn;
     margin-bottom: 10px;
 
-    color: $defaultDark;
+    color: $dark;
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
@@ -503,7 +503,7 @@ body {
       margin-bottom: 10px;
       margin-right: 9px;
 
-      background-color: $defaultRed;
+      background-color: $red;
       color: #fff;
       font-weight: 700;
       font-style: normal;
@@ -532,7 +532,7 @@ body {
   text-align: center;
   height: 500px;
 
-  background-color: $defaultDark;
+  background-color: $dark;
   color: #fff;
   font-weight: 400;
   font-size: 28px;
@@ -546,9 +546,9 @@ body {
     @include primaryBtn;
     margin: 40px auto 0 auto;
 
-    background-color: $defaultDark;
-    color: $secondaryBlue;
-    border: 2px solid $secondaryBlue;
+    background-color: $dark;
+    color: $lightBlue;
+    border: 2px solid $lightBlue;
   }
 
   @media screen and (min-width: $mobileScreenBreakpoint) {
@@ -596,7 +596,7 @@ body {
     margin-bottom: 60px;
 
     color: #fff;
-    background-color: $defaultRed;
+    background-color: $red;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -648,7 +648,7 @@ body {
       align-self: flex-start;
 
       color: #fff;
-      background-color: $defaultRed;
+      background-color: $red;
       font-weight: 700;
       font-size: 24px;
       line-height: 28px;
@@ -658,10 +658,12 @@ body {
 
 footer {
   grid-column: span 12;
-  background-color: $defaultDark;
+  background-color: $dark;
   color: #fff;
   text-align: left;
   margin-top: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
 
   p {
     margin-top: 0;
