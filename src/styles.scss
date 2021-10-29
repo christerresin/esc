@@ -275,6 +275,7 @@ body {
   @media screen and (min-width: $mobileScreenBreakpoint) {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-left: 6.7rem;
     margin-right: 6.7rem;
 
@@ -548,6 +549,10 @@ body {
     background-color: $defaultDark;
     color: $secondaryBlue;
     border: 2px solid $secondaryBlue;
+  }
+
+  @media screen and (min-width: $mobileScreenBreakpoint) {
+    margin-top: 87px;
   }
 }
 
