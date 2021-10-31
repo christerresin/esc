@@ -661,6 +661,7 @@ footer {
   margin-top: 50px;
   padding-left: 5px;
   padding-right: 5px;
+  height: 566px;
 
   p {
     margin-top: 0;
@@ -705,6 +706,10 @@ footer {
 
   .site-map {
     margin: 0 21px 0 21px;
+
+    ul:nth-of-type(2) {
+      margin-top: 21px;
+    }
   }
 
   .social {
