@@ -931,6 +931,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: left;
+    max-width: 50%;
+    min-width: 50%;
   }
   .bookings h4 {
     margin-top: 0;
