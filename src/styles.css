@@ -155,6 +155,7 @@ body {
   }
   .header .menu li:hover {
     color: #8acfe5;
+    cursor: pointer;
   }
   .header .menu-btn {
     display: none;
