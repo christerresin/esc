@@ -913,8 +913,8 @@ body {
   .bookings img {
     max-height: 460px;
     min-height: 460px;
-    max-width: 50vw;
-    min-width: 50vw;
+    max-width: 50%;
+    min-width: 50%;
   }
   .bookings .event-content {
     display: -webkit-box;
