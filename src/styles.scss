@@ -8,8 +8,6 @@ $lightBlue: #8acfe5;
 $dark: #011827;
 $gray: #b6bdb5;
 
-/* transform @mixins to @extend with %primaryBtn, %secondaryBtn */
-
 @mixin primaryBtn {
   display: flex;
   align-items: center;
@@ -18,15 +16,12 @@ $gray: #b6bdb5;
   height: 66px;
   width: 308px;
   border-radius: 4px;
+  background-color: $lightBlue;
+
+  @include defaultHeaderText;
   text-align: center;
   text-decoration: none;
-
-  background-color: $lightBlue;
   color: $dark;
-
-  font-size: 24px;
-  font-weight: 700;
-  font-style: normal;
 }
 
 @mixin secondaryBtn {
@@ -36,6 +31,13 @@ $gray: #b6bdb5;
   text-decoration-color: $darkBlue;
   font-size: 16px;
   line-height: 18.75px;
+}
+
+@mixin defaultHeaderText {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 body {
@@ -61,10 +63,7 @@ body {
   padding-left: 27px;
   padding-right: 27px;
 
-  font-weight: 700;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 28px;
+  @include defaultHeaderText;
   color: #fff;
 
   .logo {
@@ -151,9 +150,7 @@ body {
       list-style-type: none;
 
       li {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 28px;
+        @include defaultHeaderText;
         color: #fff;
       }
 
@@ -447,10 +444,7 @@ body {
     margin-bottom: 10px;
 
     color: $dark;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 28px;
+    @include defaultHeaderText;
   }
 
   a[title~='online'] {
