@@ -38,6 +38,13 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #fff;
+  /*
+    - create menu card element
+    - create button to close/hide card
+    - create ul and li elements using JS to reuse in dropDown
+    - add onClick for close button to hide menu card
+    - add onClick for menu btn to show menu card
+  */
 }
 
 .header .logo {
