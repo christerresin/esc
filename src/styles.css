@@ -76,7 +76,9 @@ body {
 .header .menu-btn {
   height: 50px;
   width: 50px;
-  margin-right: 3rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 22px;
 }
 
 @media screen and (min-width: 800px) {
