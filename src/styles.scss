@@ -116,11 +116,14 @@ body {
 
     background-color: pink;
 
-    .exitBtn {
+    .exitBtnLink {
       align-self: flex-end;
-      height: 40px;
       margin-right: 28px;
       margin-top: 28px;
+    }
+
+    .exitBtn {
+      height: 40px;
     }
 
     .mobileMenu {

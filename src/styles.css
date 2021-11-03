@@ -106,12 +106,15 @@ body {
   background-color: pink;
 }
 
-.header .dropDownMenu .exitBtn {
+.header .dropDownMenu .exitBtnLink {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  height: 40px;
   margin-right: 28px;
   margin-top: 28px;
+}
+
+.header .dropDownMenu .exitBtn {
+  height: 40px;
 }
 
 .header .dropDownMenu .mobileMenu {
