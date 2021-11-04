@@ -61,6 +61,8 @@ body {
   opacity: 50%;
 
   background-color: #fff;
+
+  animation: fadeIn 0.3s;
 }
 
 .header {
@@ -114,6 +116,9 @@ body {
     - create ul and li elements using JS to reuse in dropDown
     - add onClick for close button to hide menu card
     - add onClick for menu btn to show menu card
+    - animation for menu and layer
+      - menu easeIn and scale up from middle
+      - layer opacity increase 0 > 50%
   */
 
   .dropDownMenu {
@@ -795,5 +800,14 @@ footer {
       margin-right: 15%;
       margin-top: 147px;
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
   }
 }
