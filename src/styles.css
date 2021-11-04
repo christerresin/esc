@@ -556,7 +556,7 @@ body {
   background: transparent;
 }
 
-.challenges .slider .slides > .card {
+.challenges .slider .slides > .challenge-item {
   scroll-snap-align: start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -589,7 +589,7 @@ body {
           align-items: flex-start;
 }
 
-.challenges .slider .slides > .card img {
+.challenges .slider .slides > .challenge-item img {
   height: 219px;
   width: 363px;
   -o-object-fit: cover;
@@ -597,7 +597,7 @@ body {
   border-radius: 8px 8px 0 0;
 }
 
-.challenges .slider .slides > .card .card-header {
+.challenges .slider .slides > .challenge-item .challenge-item-header {
   margin-left: 12px;
   margin-top: 12px;
   margin-bottom: 0px;
@@ -607,7 +607,7 @@ body {
   line-height: 33px;
 }
 
-.challenges .slider .slides > .card .rating {
+.challenges .slider .slides > .challenge-item .rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,24 +625,24 @@ body {
   width: 90%;
 }
 
-.challenges .slider .slides > .card .card-rating-star {
+.challenges .slider .slides > .challenge-item .challenge-item-rating-star {
   width: 15px;
   height: 17px;
 }
 
-.challenges .slider .slides > .card .card-rating-star-unfilled {
+.challenges .slider .slides > .challenge-item .challenge-item-rating-star-unfilled {
   width: 15px;
   height: 17px;
 }
 
-.challenges .slider .slides > .card .participants {
+.challenges .slider .slides > .challenge-item .participants {
   margin-top: 3px;
   margin-left: 10px;
   font-size: 14px;
   line-height: 16px;
 }
 
-.challenges .slider .slides > .card .card-content {
+.challenges .slider .slides > .challenge-item .card-content {
   margin-left: 18px;
   margin-top: 18px;
   text-align: left;
@@ -652,7 +652,7 @@ body {
   line-height: 21px;
 }
 
-.challenges .slider .slides > .card .card-btn {
+.challenges .slider .slides > .challenge-item .card-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,7 +790,7 @@ body {
     scroll-behavior: none;
     -webkit-overflow-scrolling: none;
   }
-  .challenges .slider .slides .card:nth-of-type(3) {
+  .challenges .slider .slides .challenge-item:nth-of-type(3) {
     display: none;
   }
   .challenges .all-challenges {
@@ -844,7 +844,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .challenges .slider .slides .card:nth-of-type(3) {
+  .challenges .slider .slides .challenge-item:nth-of-type(3) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
