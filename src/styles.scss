@@ -62,7 +62,7 @@ body {
 
   background-color: #fff;
 
-  animation: fadeIn 0.3s;
+  animation: fadeIn 0.1s;
 }
 
 .header {
@@ -132,6 +132,8 @@ body {
     z-index: 3;
 
     background-color: $dark;
+
+    animation: menuEnter ease-in 0.1s;
 
     .exitBtnLink {
       align-self: flex-end;
@@ -809,5 +811,16 @@ footer {
   }
   100% {
     opacity: 0.5;
+  }
+}
+
+@keyframes menuEnter {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
