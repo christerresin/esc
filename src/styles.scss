@@ -218,6 +218,8 @@ body {
       li {
         @include defaultHeaderText;
         color: $c-white;
+
+        transition: color 0.5s;
       }
 
       li:hover {
