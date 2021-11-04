@@ -636,13 +636,15 @@ body {
 }
 
 .challenges .slider .slides > .challenge-item .challenge-item-rating-star {
-  width: 15px;
-  height: 17px;
+  width: 1rem;
+  height: 1rem;
+  image-resolution: 600dpi;
 }
 
 .challenges .slider .slides > .challenge-item .challenge-item-rating-star-unfilled {
-  width: 15px;
-  height: 17px;
+  width: 1rem;
+  height: 1rem;
+  image-resolution: 600dpi;
 }
 
 .challenges .slider .slides > .challenge-item .participants {
