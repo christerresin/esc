@@ -21,6 +21,14 @@ dropDownMenuBtn.addEventListener('click', (e) => {
     layer.classList.add('layer')
 })
 
+// Placeholder listener to close menu when clicked
+dropDownMenu.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropDownMenu.setAttribute('style', 'display: none');
+    layer.classList.remove('layer')
+})
+
+
 
 // Render menus
 const createMenu = function(el){

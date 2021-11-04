@@ -115,11 +115,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
-  height: 914px;
+  height: 100vh;
   z-index: 3;
   background-color: #011827;
-  -webkit-animation: menuEnter ease-in 0.1s;
-          animation: menuEnter ease-in 0.1s;
+  -webkit-animation: menuEnter cubic-bezier(0.7, 0, 0.84, 0) 0.2s;
+          animation: menuEnter cubic-bezier(0.7, 0, 0.84, 0) 0.2s;
 }
 
 .header .dropDownMenu .exitBtnLink {
@@ -134,7 +134,7 @@ body {
 }
 
 .header .dropDownMenu .mobileMenu {
-  height: 400px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,10 +145,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 0;
-  margin-top: 100px;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
   list-style-type: none;
 }
 
@@ -1190,8 +1192,8 @@ footer .social {
 
 @-webkit-keyframes menuEnter {
   0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
     opacity: 0;
   }
   100% {
@@ -1203,8 +1205,8 @@ footer .social {
 
 @keyframes menuEnter {
   0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
     opacity: 0;
   }
   100% {
