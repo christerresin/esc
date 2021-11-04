@@ -255,11 +255,11 @@ body {
   }
 }
 
-.hero-content {
+.hero {
   grid-column: span 12;
 }
 
-.hero-content .challenges-hero-img {
+.hero .hero-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +276,7 @@ body {
   height: 274px;
 }
 
-.hero-content .onsite-challenges-btn {
+.hero .onsite-challenges-cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +302,7 @@ body {
   margin-top: 37px;
 }
 
-.hero-content .online-challenges-btn {
+.hero .online-challenges-cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,7 +334,7 @@ body {
   text-decoration: underline;
 }
 
-.hero-content .hero-link-btn {
+.hero .hero-cta-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,10 +351,10 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-  .hero-content .challenges-hero-img {
+  .hero .hero-img {
     height: 468px;
   }
-  .hero-content .hero-btn-container {
+  .hero .hero-btn-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -370,7 +370,7 @@ body {
             justify-content: center;
     margin-top: -35px;
   }
-  .hero-content .online-challenges-btn {
+  .hero .online-challenges-cta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -397,7 +397,7 @@ body {
     background-color: #e3170a;
     color: #fff;
   }
-  .hero-content .onsite-challenges-btn {
+  .hero .onsite-challenges-cta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
