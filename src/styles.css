@@ -1061,7 +1061,7 @@ body {
   }
 }
 
-footer {
+.footer {
   grid-column: span 12;
   background-color: #011827;
   color: #fff;
@@ -1072,27 +1072,27 @@ footer {
   height: 566px;
 }
 
-footer p {
+.footer p {
   margin-top: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
-footer .footer-header {
+.footer .footer-header {
   margin-top: 64px;
   margin-bottom: 7px;
   font-weight: 700;
   font-size: 18px;
 }
 
-footer .footer-list-menu {
+.footer .footer-list-menu {
   margin-bottom: 7px;
   font-size: 18px;
   font-weight: 700;
 }
 
-footer ul {
+.footer ul {
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
@@ -1101,11 +1101,11 @@ footer ul {
   line-height: 21px;
 }
 
-footer .about {
+.footer .about {
   margin: 0 21px 0 21px;
 }
 
-footer .links {
+.footer .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1115,20 +1115,20 @@ footer .links {
           flex-direction: column;
 }
 
-footer .site-map {
+.footer .site-map {
   margin: 0 21px 0 21px;
 }
 
-footer .site-map ul:nth-of-type(2) {
+.footer .site-map ul:nth-of-type(2) {
   margin-top: 21px;
 }
 
-footer .social {
+.footer .social {
   margin: 0 21px 0 21px;
 }
 
 @media screen and (min-width: 1200px) {
-  footer {
+  .footer {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[12];
@@ -1136,7 +1136,7 @@ footer .social {
     height: 467px;
     margin-top: 182px;
   }
-  footer .about {
+  .footer .about {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1 / 6;
@@ -1153,7 +1153,7 @@ footer .social {
     margin-left: 15%;
     margin-top: 120px;
   }
-  footer .links {
+  .footer .links {
     -ms-grid-column: 7;
     -ms-grid-column-span: 6;
     grid-column: 7 / 13;
