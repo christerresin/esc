@@ -207,7 +207,7 @@ body {
   .header .logo .company-name {
     height: 47px;
     width: 404px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     margin-left: 24px;
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -230,6 +230,7 @@ body {
             justify-content: space-evenly;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 22px;
     grid-column: span 12;
     padding: 0;
     list-style-type: none;

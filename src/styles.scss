@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url(_variables.scss);
+@import '_variables.scss';
 
 @mixin primaryBtn {
   display: flex;
@@ -19,7 +19,7 @@
 
 @mixin secondaryBtn {
   @include primaryBtn;
-  background-color: #fff;
+  background-color: $c-white;
   color: $c-darkBlue;
   text-decoration-color: $c-darkBlue;
   font-size: 16px;
@@ -57,7 +57,7 @@ body {
   z-index: 2;
   opacity: 50%;
 
-  background-color: #fff;
+  background-color: $c-white;
 
   animation: fadeIn 0.1s;
 }
@@ -74,7 +74,7 @@ body {
   padding-right: 27px;
 
   @include defaultHeaderText;
-  color: #fff;
+  color: $c-white;
 
   .logo {
     display: flex;
@@ -156,7 +156,7 @@ body {
 
       li {
         @include defaultHeaderText;
-        color: #fff;
+        color: $c-white;
         font-size: 36px;
         line-height: 42px;
       }
@@ -189,7 +189,7 @@ body {
       .company-name {
         height: 47px;
         width: 404px;
-        margin-bottom: 4px;
+        margin-bottom: 5px;
         margin-left: 24px;
         align-self: flex-end;
 
@@ -208,6 +208,7 @@ body {
       justify-content: space-evenly;
       margin-left: 100px;
       margin-right: 100px;
+      margin-bottom: 22px;
       grid-column: span 12;
       padding: 0;
 
@@ -215,7 +216,7 @@ body {
 
       li {
         @include defaultHeaderText;
-        color: #fff;
+        color: $c-white;
       }
 
       li:hover {
@@ -281,7 +282,7 @@ body {
       margin-right: 9px;
 
       background-color: $c-red;
-      color: #fff;
+      color: $c-white;
     }
 
     .onsite-challenges-btn {
@@ -414,7 +415,7 @@ body {
       margin-left: 25px;
       border-radius: 8px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-      background: #fff;
+      background: $c-white;
       transform-origin: center center;
       transform: scale(1);
       transition: transform 0.5s;
@@ -483,7 +484,7 @@ body {
         margin-left: 166px;
         margin-top: auto;
         margin-bottom: 12px;
-        color: #fff;
+        color: $c-white;
         background-color: $c-red;
         width: 179px;
         height: 44px;
@@ -559,7 +560,7 @@ body {
       margin-right: 9px;
 
       background-color: $c-red;
-      color: #fff;
+      color: $c-white;
       font-weight: 700;
       font-style: normal;
       font-size: 24px;
@@ -588,7 +589,7 @@ body {
   height: 500px;
 
   background-color: $c-dark;
-  color: #fff;
+  color: $c-white;
   font-weight: 400;
   font-size: 28px;
   line-height: 33px;
@@ -650,7 +651,7 @@ body {
     margin-left: 21px;
     margin-bottom: 60px;
 
-    color: #fff;
+    color: $c-white;
     background-color: $c-red;
     font-weight: 700;
     font-size: 24px;
@@ -704,7 +705,7 @@ body {
       margin-bottom: 66px;
       align-self: flex-start;
 
-      color: #fff;
+      color: $c-white;
       background-color: $c-red;
       font-weight: 700;
       font-size: 24px;
@@ -716,7 +717,7 @@ body {
 .footer {
   grid-column: span 12;
   background-color: $c-dark;
-  color: #fff;
+  color: $c-white;
   text-align: left;
   margin-top: 50px;
   padding-left: 5px;
