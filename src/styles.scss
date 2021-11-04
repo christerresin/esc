@@ -11,10 +11,16 @@
   border-radius: 4px;
   background-color: $c-lightBlue;
 
+  transition: opacity 1s;
+
   @include defaultHeaderText;
   text-align: center;
   text-decoration: none;
   color: $c-dark;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 @mixin secondaryBtn {
@@ -591,7 +597,7 @@ body {
   }
 }
 
-.company-information {
+.story {
   grid-column: span 12;
   text-align: center;
   height: 500px;
@@ -603,7 +609,7 @@ body {
   line-height: 33px;
 
   p {
-    margin: 95px 20px 0px 20px;
+    margin: 95px 1.5rem 0px 1.5rem;
   }
 
   a[title~='story'] {
