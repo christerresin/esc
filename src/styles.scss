@@ -52,6 +52,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.layer {
+  position: fixed;
+  size: fill;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  opacity: 50%;
+
+  background-color: #fff;
+}
+
 .header {
   grid-column: span 12;
   display: flex;
@@ -113,8 +124,9 @@ body {
     align-items: center;
     width: 90%;
     height: 914px;
+    z-index: 3;
 
-    background-color: pink;
+    background-color: $dark;
 
     .exitBtnLink {
       align-self: flex-end;

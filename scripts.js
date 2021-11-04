@@ -1,20 +1,27 @@
 // Using DOM API to select elements
+const body = document.querySelector('body');
+const header = document.querySelector('.header')
+const dropDownMenu = document.querySelector('.dropDownMenu');
+const dropDownMenuBtn = document.querySelector('.menu-btn');
+const layer = document.querySelector('#layer')
+const menuExitBtn = document.querySelector('.exitBtnLink');
 const navbar = document.querySelector('.navbar');
-const dropDownMenu = document.querySelector('.dropDownMenu')
-const dropDownMenuBtn = document.querySelector('.menu-btn')
-const menuExitBtn = document.querySelector('.exitBtnLink')
+
 
 // Event listeners
 menuExitBtn.addEventListener('click', (e) => {
     e.preventDefault();
     dropDownMenu.setAttribute('style', 'display: none');
+    layer.classList.remove('layer')
 })
 
 dropDownMenuBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    dropDownMenu.setAttribute('style', 'display: flex')
+    dropDownMenu.style.setProperty('display', 'flex');
+    layer.classList.add('layer')
 })
- 
+
+
 // Render menus
 const createMenu = function(el){
     let isMobile;
@@ -38,11 +45,6 @@ const createMenu = function(el){
 
     el.append(menuEl);
 }
-
-const showHideMenu = function() {
-    console.log('clicked')
-}
-
 
 // Render
 createMenu(navbar);
